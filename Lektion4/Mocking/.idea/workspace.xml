@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9b0704d-5257-49ba-88e3-d01cda953923" name="Changes" comment="">
+    <list default="true" id="251e25be-23bc-4b0a-9887-6bbdd9882c77" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../../Lektion3/examples/src/main/java/se/apiva/Book.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Lektion3/examples/src/main/java/se/apiva/Calculator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Lektion3/examples/src/main/java/se/apiva/FastCalculator.java" afterDir="false" />
@@ -13,7 +13,18 @@
       <change afterPath="$PROJECT_DIR$/../../Lektion3/examples/src/test/java/se/apiva/TestAssumption.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Lektion3/examples/src/test/java/se/apiva/TestCalculators.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Lektion3/examples/src/test/java/se/apiva/TestParameterizedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/apiva/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/apiva/DBInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/apiva/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/apiva/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/se/apiva/MockExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lektion2/WordCounter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lektion2/WordCounter/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,41 +42,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="34SdRaWXu9v46WII0RdPur2yil7" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="34gk5peUM4LAQy95V9l6orxoE8y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.WordCounterTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.WordCounter [package].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MockExamples.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.Mocking [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="se.apiva" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager">
-    <configuration name="WordCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WordCounter" />
+    <configuration name="MockExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mocking" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="se.apiva.*" />
@@ -72,7 +79,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="se.apiva" />
-      <option name="MAIN_CLASS_NAME" value="se.apiva.WordCounterTest" />
+      <option name="MAIN_CLASS_NAME" value="se.apiva.MockExamples" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,7 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WordCounterTest" />
+        <item itemvalue="JUnit.MockExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -94,14 +101,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d9b0704d-5257-49ba-88e3-d01cda953923" name="Changes" comment="" />
-      <created>1761210902118</created>
+      <changelist id="251e25be-23bc-4b0a-9887-6bbdd9882c77" name="Changes" comment="" />
+      <created>1761642424748</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1761210902118</updated>
-      <workItem from="1761210903098" duration="5112000" />
-      <workItem from="1761290970557" duration="810000" />
-      <workItem from="1761311896151" duration="16000" />
+      <updated>1761642424748</updated>
+      <workItem from="1761642425724" duration="7563000" />
     </task>
     <servers />
   </component>
