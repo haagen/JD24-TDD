@@ -34,7 +34,7 @@ class HexDemoApplicationTests {
             paymentProcessor,
             notifier
         );
-        when(inventory.reserve(any(), any())).thenReturn(true);
+        when(inventory.reserve(new ProductId("PRODUKT_ID"), 10)).thenReturn(true);
         when(paymentProcessor.charge(any(), any())).thenReturn("PAYMENT-ID");
         when(pricingPolicy.getPrice(any(), any())).thenReturn(new Money(BigDecimal.TEN));
         Cart cart = new Cart(

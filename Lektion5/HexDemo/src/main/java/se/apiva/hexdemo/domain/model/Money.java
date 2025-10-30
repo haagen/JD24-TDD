@@ -16,8 +16,8 @@ public record Money(BigDecimal amount) {
         return new Money(amount.subtract(other.amount));
     }
 
-    public Money multiply(Money other) {
-        return new Money(amount.multiply(other.amount));
+    public Money multiply(double multiplier) {
+        return new Money(amount.multiply(BigDecimal.valueOf(multiplier)));
     }
 
     @Override

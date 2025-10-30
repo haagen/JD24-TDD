@@ -12,7 +12,7 @@ public class CheckoutController {
     private final CheckoutService checkoutService;
 
     public CheckoutController(CheckoutService checkoutService) {
-        checkoutService = checkoutService;
+        this.checkoutService = checkoutService;
     }
 
 }
