@@ -1,0 +1,1 @@
+INSERT INTO books (title, author, published_year) VALUES ('Clean Code', 'Robert C. Martin', 2008), ('Effective Java', 'Joshua Bloch', 2018);
