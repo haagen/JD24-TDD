@@ -2,6 +2,6 @@ package se.apiva;
 
 public interface InventoryService {
 
-    public Boolean checkAvailability(int productId, int quantity);
+    public Boolean checkAvailability(Integer productId, Integer quantity);
 
 }

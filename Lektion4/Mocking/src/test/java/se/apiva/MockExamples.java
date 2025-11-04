@@ -1,6 +1,8 @@
 package se.apiva;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.MockedStatic;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
@@ -15,7 +17,7 @@ public class MockExamples {
         // Assemble
         OrderService orderService = new OrderService(new InventoryService() {
             @Override
-            public Boolean checkAvailability(int productId, int quantity) {
+            public Boolean checkAvailability(Integer productId, Integer quantity) {
                 return false;
             }
         });
@@ -120,5 +122,71 @@ public class MockExamples {
 
 
     }
+
+    @Test
+    public void checkPlaceOrderWithMockito() {
+
+        // Arrange
+        InventoryService mockService = mock(InventoryService.class);
+        OrderService orderService = new OrderService(mockService);
+        when(mockService.checkAvailability(anyInt(), anyInt())).thenReturn(true);
+
+        // Act
+        Boolean result1 = orderService.placeOrder(1, 2);
+        Boolean result2 = orderService.placeOrder(2, 4);
+
+        // Assert
+        assertTrue(result1);
+        assertTrue(result2);
+
+        // Create an ArgumentCaptor
+        ArgumentCaptor<Integer> productIdCaptor = ArgumentCaptor.forClass(Integer.class);
+        ArgumentCaptor<Integer> quantityCaptor = ArgumentCaptor.forClass(Integer.class);
+
+        // Fetch argument using verify
+        verify(mockService, times(2)).checkAvailability(
+                productIdCaptor.capture(),
+                quantityCaptor.capture()
+        );
+        //verify(mockService, times(2)).checkAvailability(anyInt(), quantityCaptor.capture());
+
+        Integer productId1 = productIdCaptor.getAllValues().get(0);
+        Integer quantity1 = quantityCaptor.getAllValues().get(0);
+        assertAll(
+                "Testing first call",
+                () -> assertEquals(1, productId1),
+                () -> assertEquals(2, quantity1)
+        );
+
+        Integer productId2 = productIdCaptor.getAllValues().get(1);
+        Integer quantity2 = quantityCaptor.getAllValues().get(1);
+        assertAll(
+                "Testing first call",
+                () -> assertEquals(2, productId2),
+                () -> assertEquals(4, quantity2)
+        );
+
+    }
+
+
+    @Test
+    public void canWeMockStaticMethods() {
+
+        try(MockedStatic<MathUtil> mocked = mockStatic(MathUtil.class)) {
+            // Assemble
+            mocked.when(() -> MathUtil.isPrime(7)).thenReturn(true);
+            mocked.when(() -> MathUtil.isPrime(8)).thenReturn(false);
+
+            // Act & Assert
+            assertTrue(MathUtil.isPrime(7));
+            assertFalse(MathUtil.isPrime(8));
+
+            mocked.verify(() -> MathUtil.isPrime(7), times(1));
+            mocked.verify(() -> MathUtil.isPrime(8), times(1));
+            mocked.verify(() -> MathUtil.isPrime(anyInt()), times(2));
+        }
+
+    }
+
 
 }
